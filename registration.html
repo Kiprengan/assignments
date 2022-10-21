@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <style>
+        form{
+            width: 50%;
+            margin: auto;
+        }
+        input, label, select, button{
+            padding: 5px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <p><h1>Registration Page</h1></p>
+    <p>My Name is Denis Kiprono who is frontend web developer at zuri. <br>
+      This is my week 3 assignment where am going to implement registration form using HTML and some CSS with some basic form validation
+    </p>
+    <form style="margin:auto;">
+        <div>
+            <label for="fname">First Name</label>
+            <input type="text" name="fname" id="fname" placeholder="Enter Your First Name"><br>
+            <label for="lname">Last Name</label>
+            <input type="text" name="lname" id="lname" placeholder="Enter Your Last Name"><br>
+            <label for="pnumber">Phone Number</label>
+            <input type="tel" name="pnumber" id="pnumber" placeholder="+254 712 345678"><br>
+            <label for="email">Email Address</label>
+            <input type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Follow this format characters@characters.domain" placeholder="abcd@gmail.com" required><br>
+            <label for="gender">Gender</label>
+            <select name="gender" id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other" selected>Other</option>
+                <option value="none">Prefer not to say</option>
+            </select><br>
+            <label for="dob">Date of Birth</label>
+            <input type="date" name="dob" id="dob"><br>
+            <label for="color">Your Favorite Color</label>  
+            <input type="color" name="color" id="color"><br>
+            <button type="submit" name="submit" id="submit">Submit</button>
+            <button type="reset" name="reset" id="reset"> Reset </button>
+        </div>
+    </form>
+</body>
+</html>

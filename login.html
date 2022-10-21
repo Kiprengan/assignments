@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <style>
+        form{
+            width: 50%;
+            margin: auto;
+        }
+        input, label, button{
+            padding: 5px;
+            margin: 5px;
+        }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <label for="email">Email Address</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+        title="Follow this format characters@characters.domain"
+        placeholder="abcd@gmail.com"
+        required
+      /><br />
+      <label for="pswd">password</label>
+      <input
+        type="password"
+        id="pswd"
+        name="pswd"
+        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+        title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"
+        required
+      /> <br>
+      <button type="submit" formaction="/Week 3/success.html">Submit</button>
+    </form>
+  </body>
+</html>
