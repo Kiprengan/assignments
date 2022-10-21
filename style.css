@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+flexb{
+    font-size: 15px;
+}
+.sedans{
+    background-color: hsl(31, 77%, 52%);
+    padding: 2em;
+    width: 33em;
+}
+.suvs{
+    background-color: hsl(184, 100%, 22%);
+    padding: 2em;
+    width: 33em;
+}
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+    padding: 2em;
+    width: 33em;
+}
+flexm,h3{
+    color:hsl(0, 0%, 95%) ;
+}
+#sedans{
+    color: hsl(31, 77%, 52%);
+}
+#suvs{
+    color: hsl(184, 100%, 22%);
+}
+#luxury{
+    color: hsl(179, 100%, 13%);
+}
+img{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+h3{
+    padding-bottom: 10px;
+}
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+    padding-bottom: 10px;
+}
+button{
+    border-radius: 10px;
+    width: 9em;
+    height: 2em;
+    }
+.flexm{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    height: 100vh
+}
+@media screen and (max-width:375px) {
+    .flexm{
+        width: 50%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+        height: 100vh
+    }
+}
+
+.gridb{
+    background-color: aliceblue;
+    display: flex;
+    place-items: center;
+    height: 100vh;
+}
+.gridm{
+    display: grid;
+    grid-template-areas: 
+    'a a a b'    
+    'c c d d'
+    'c c e e';
+    gap: 10px;
+    width: 70%;
+    margin: auto;
+}
+.gridm div{
+    padding: 2em;
+    text-align: center;
+    }
+.d1{
+    background-color: blue;
+    grid-area: a;
+    }
+.d2{
+    background-color: chartreuse;
+    grid-area: b;
+}
+.d3{
+    background-color: black;
+    grid-area: c;
+}
+.d4{
+    background-color: darkgreen;
+    grid-area: d;
+}
+.d5{
+    background-color: rgb(230, 36, 36);
+    grid-area: e;
+}
